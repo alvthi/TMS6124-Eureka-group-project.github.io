@@ -1,5 +1,7 @@
 .book-card {
-  border: 1px solid #ccc;
+  border: 2px solid black;
+  background-color: white;
+  border-radius: 25px;
   padding: 10px;
   margin: 10px;
   width: 300px;
@@ -16,39 +18,32 @@
   cursor: pointer;
 }
 
-header,
-section,
-footer,
-aside,
-nav,
-article,
-figure,
-figcaption {
-  display: block;
+
+
+body,
+html {
+  margin: 0;
+  padding: 0;
 }
 
-p {
+li.topbar {
+  display: inline;
+  margin-right: 20px;
+}
+
+p.topbar {
   max-width: 100%;
   height: auto;
+  font-size: 20px;
+  text-align: justify;
 }
 
 
-
-
-
-div.centercontainer {
-  border: 5px solid;
+div.centercontainer_index,
+div.centercontainer_add,
+div.centercontainer_edit {
   margin: auto;
-  width: 50%;
-  height: 100%;
-  padding: 10px;
-  background-color: white;
-}
-
-div.centercontainer {
-  border: 5px solid;
-  margin: auto;
-  width: 50%;
+  width: 100%;
   height: 100%;
   padding: 10px;
   background-color: white;
@@ -57,9 +52,30 @@ div.centercontainer {
   flex-direction: column;
 }
 
+div.centercontainer_fiction {
+  margin: auto;
+  width: 100%;
+  height: 100%;
+  padding: 10px;
+  background-color: #FFCCCB;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+}
+
+div.centercontainer_nonfiction {
+  margin: auto;
+  width: 100%;
+  height: 100%;
+  padding: 10px;
+  background-color: #C4A484;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+}
 
 body {
-  background-color: black;
+  background-color: white;
   background-repeat: repeat-y;
   height: 100%;
   width: 100%;
@@ -72,35 +88,40 @@ header {
 }
 
 .body_title {
+  margin-top: 150px;
   text-align: center;
-  border: 2px solid black;
   background-color: white;
   font-size: 24px;
+  height: 100%;
+  width: 100%;
 }
 
 
-.logo {
-  float: left;
-  max-width: 100%;
-  height: auto;
-}
+
+
 
 
 
 
 
 div.directory {
-  border: 2px solid;
-  justify-content: center;
   margin: auto;
   border-top: 0px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #fff;
+  z-index: 1000;
+  border-bottom: 1px solid #ccc;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .navigation_text {
   font-family: Verdana;
   font-size: 20px;
   text-decoration: none;
-  display: flex;
+  display: inline-grid;
 }
 
 
@@ -122,13 +143,14 @@ ul {
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: green;
+  background-color: #006400;
 }
 
 
 
 li {
   float: left;
+  color: white;
 }
 
 
@@ -146,6 +168,18 @@ li a:hover {
 }
 
 #booksContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+#fictionBooksContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+#nonfictionBooksContainer {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -225,7 +259,10 @@ input[type=submit]:hover {
 
 
 div.bottom_footer {
-  border: 2px solid white;
+  width: 100%;
+  border: 2px solid black;
+  background-color: black;
+  color: white;
 }
 
 
@@ -235,7 +272,8 @@ span.text_left {
 }
 
 span.text_right {
-  margin-left: 330px;
+  margin-left: 0px;
+  float: right;
 }
 
 
@@ -245,4 +283,28 @@ a.prev:hover {
 
 a.next:hover {
   cursor: pointer;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  /* Center items horizontally */
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+
+ul li {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  width: 25%;
+  height: auto;
+  margin-right: 10px;
 }
