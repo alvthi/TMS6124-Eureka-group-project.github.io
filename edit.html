@@ -9,29 +9,34 @@
 </head>
 
 <body>
+  <div id="topside"></div>
 
-  <div class="centercontainer">
-    <header id="header">
-
+  <header>
+    <div class="container">
       <!--body title-->
       <div class="body_title">
-        <img src="images/unimas_logo.webp" class="logo" alt="logo">
-        <p>Ebookstore Management - Edit</p>
+        <p class="p1">Ebookstore Management - Home</p>
       </div>
       <!--end of body title-->
+    </div>
 
+    <!--body navigation/directory-->
+    <div class="directory">
+      <ul>
+        <li class="topbar"><img src="images/team-logo.png" class="logo" alt="logo"></li>
 
-      <!--body navigation/directory-->
-      <div class="directory">
-        <ul>
-          <li><a href="index.html" class="navigation_text">Home</a></li>
-          <li><a href="add.html" class="navigation_text">Add</a></li>
-          <li><a href="edit.html" class="navigation_text">Edit</a></li>
-        </ul>
-      </div>
-      <!--end of body navigation/directory-->
-    </header>
+      </ul>
+      <ul>
+        <li><a href="index.html" class="navigation_text">Home</a></li>
+        <li><a href="fiction.html" class="navigation_text">Fiction Book</a></li>
+        <li><a href="nonfiction.html" class="navigation_text">Non-Fiction Book</a></li>
+        <li><a href="add.html" class="navigation_text">Add</a></li>
+      </ul>
+    </div>
+    <!--end of body navigation/directory-->
+  </header>
 
+  <div class="centercontainer_edit">
     <div id="forms">
       <b>Edit Book</b>
       <div class="edit_form">
@@ -128,7 +133,7 @@
         </span>
 
         <span class="text_right">
-          <a href="#header">
+          <a href="#topside">
             TOP
           </a>
         </span>
