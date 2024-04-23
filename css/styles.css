@@ -1,6 +1,6 @@
 .book-card {
   border: 2px solid black;
-  background-color: #f8f8ee;
+  background-color: white;
   border-radius: 25px;
   padding: 10px;
   margin: 10px;
@@ -46,7 +46,7 @@ div.centercontainer_edit {
   width: 100%;
   height: 100%;
   padding: 10px;
-  background-color: white;
+  background-color: #f8f8ee;
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
